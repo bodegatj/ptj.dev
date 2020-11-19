@@ -1,13 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-
-console.log('Hello from tsx!')
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import App from './App';
+import './style.scss';
+import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
-<div>
-  <p>Hello</p>
-  
-  <a href="https://support.eji.org/give/153413/#!/donation/checkout">BLM</a>
-  </div>
-  ,  document.getElementById('root'),
-)
+  <App />,
+  document.getElementById('root') as HTMLElement
+);
+registerServiceWorker();
